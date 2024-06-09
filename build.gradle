@@ -11,6 +11,11 @@ repositories {
     mavenCentral()
 }
 
+// 인코딩 변경
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
 dependencies {
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
